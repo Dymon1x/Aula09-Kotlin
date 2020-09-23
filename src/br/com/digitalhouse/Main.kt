@@ -32,14 +32,8 @@ fun main() {
 
     println("")
     println("=== Consultando Livros ===")
-    estoque1.consultar(1)
-    estoque1.consultar(5)
-
-    println("")
-    println("=== Consultando Coleções ===")
-    estoque1.consultar(10)
-    estoque1.consultar(20)
-    estoque1.consultar(30)
+    estoque1.consultarLivro(1)
+    estoque1.consultarLivro(5)
 
     println("")
     println("=== Venda ===")

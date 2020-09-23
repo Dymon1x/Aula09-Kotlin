@@ -15,20 +15,20 @@ class Estoque (val listaColecao: MutableMap<Int, Colecao> = mutableMapOf<Int, Co
     }
 
     fun consultarLivro (indice: Int) {
-        if (listaLivro.get(indice) != null){
-            println(listaLivro[indice]!!.titulo)
-        }
-        else {
+        if (listaLivro.get(indice-1) != null){
+            println(listaLivro[indice-1]!!.titulo)
+        } else {
             println("Livro não encontrado")
         }
     }
 
     fun efetuarVenda (indice: Int) {
-        if (listaLivro.get(indice)!!.qtEstoque > 0){
-            listaLivro.get(indice)!!.qtEstoque -= 1
-            println("livro ${listaLivro.get(indice)!!.titulo} vendido")
+        if (listaLivro.get(indice-1)!!.qtEstoque > 0){
+            listaLivro.get(indice-1)!!.qtEstoque -= 1
+            println("livro ${listaLivro.get(indice-1)!!.titulo} vendido " +
+                    "e restará em estoque ${listaLivro.get(indice-1)!!.qtEstoque}")
         } else {
-            listaLivro.remove(indice)
+            listaLivro.remove(indice-1)
             println("Livro fora estoque ")
         }
     }
