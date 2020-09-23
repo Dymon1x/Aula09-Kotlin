@@ -1,4 +1,5 @@
 package br.com.digitalhouse
 
-class Colecao() {
+class Colecao(val colecao:MutableMap<Int,Livro>,val preco:Int, val codigo:Int, val descricao:String) {
+
 }
