@@ -1,12 +1,12 @@
 package br.com.digitalhouse
 
 fun main() {
-    val livro1 = Livro(1, "Harry Potter1", "JK", "20/01/1999", 2, 100.0f)
-    val livro2 = Livro(2, "Harry Potter2", "JK", "20/01/2000", 2, 100.0f)
-    val livro3 = Livro(3, "Narnia1", "asdfghjklç", "08/06/2000", 10, 50.0f)
-    val livro4 = Livro(4, "Narnia2", "asdfghjklç", "08/06/2000", 10, 50.0f)
-    val livro5 = Livro(5, "Senhor dos Aneis1", "qwertyuio", "10/05/1995", 20, 100.0f)
-    val livro6 = Livro(6, "Senhor dos Aneis2", "qwertyuio", "10/05/1998", 20, 100.0f)
+    val livro1 = Livro(1, "Harry Potter1", "JK", "1999", 2, 100.0f)
+    val livro2 = Livro(2, "Harry Potter2", "JK", "2000", 2, 100.0f)
+    val livro3 = Livro(3, "Narnia1", "asdfghjklç", "2000", 10, 50.0f)
+    val livro4 = Livro(4, "Narnia2", "asdfghjklç", "2000", 10, 50.0f)
+    val livro5 = Livro(5, "Senhor dos Aneis1", "qwertyuio", "1995", 20, 100.0f)
+    val livro6 = Livro(6, "Senhor dos Aneis2", "qwertyuio", "1998", 20, 100.0f)
 
     val lista12 = listOf(livro1, livro2)
     val lista34 = listOf(livro3, livro4)
@@ -38,6 +38,9 @@ fun main() {
     println("")
     println("=== Venda ===")
     estoque1.efetuarVenda(1)
+    estoque1.efetuarVenda(1)
+    estoque1.efetuarVenda(1) //simulando quando um livro está fora de estoque
+
     estoque1.efetuarVenda(2)
     estoque1.efetuarVenda(3)
     estoque1.efetuarVenda(4)
