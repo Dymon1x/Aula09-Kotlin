@@ -1,5 +1,5 @@
 package br.com.digitalhouse
-//comentario aleatorio
+
 class Estoque (val listaColecao: MutableMap<Int, Colecao> = mutableMapOf<Int, Colecao>(),
                val listaLivro: MutableMap<Int, Livro> = mutableMapOf<Int, Livro>())
 {
