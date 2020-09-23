@@ -5,5 +5,5 @@ data class Livro (val codigo: Int,
                   val autor: String,
                   val lancamento: String,
                   var qtEstoque: Int,
-                  val preco: Double) {
+                  val preco: Float) {
 }
